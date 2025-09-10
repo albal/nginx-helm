@@ -58,3 +58,7 @@ jobs:
         with:
           charts_dir: .
           config: .github/cr.yaml
+          charts-repo-url: https://albal.github.io/nginx-helm
+          index-path: index.yaml
+          package-path: .cr-release-packages
+          generate-release-notes: true

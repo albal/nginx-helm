@@ -4,6 +4,4 @@ git-repo: nginx-helm
 charts-repo-url: https://albal.github.io/nginx-helm
 index-path: index.yaml
 package-path: .cr-release-packages
-git-base-url: https://github.com/
-git-upload-url: https://uploads.github.com/
 generate-release-notes: true
