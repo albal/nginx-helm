@@ -217,13 +217,42 @@ kubectl top pods
 
 Consider adjusting resource requests/limits in values.yaml.
 
+## Chart Repository
+
+This chart is automatically published to GitHub Pages at: https://albal.github.io/nginx-helm
+
+### Adding the repository
+
+```bash
+helm repo add nginx-helm https://albal.github.io/nginx-helm
+helm repo update
+```
+
+### Installing from the repository
+
+```bash
+helm install my-nginx nginx-helm/nginx-chart
+```
+
 ## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Test thoroughly
+4. Test thoroughly (run `helm lint nginx-chart`)
 5. Submit a pull request
+
+### Publishing Process
+
+Charts are automatically published when:
+- Changes are pushed to the `main` branch
+- Version tags (e.g., `v1.0.1`) are created
+
+The GitHub Action workflow will:
+1. Lint and test the chart
+2. Package the chart
+3. Create a GitHub release
+4. Update the Helm repository index on GitHub Pages
 
 ## License
 

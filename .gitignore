@@ -1,0 +1,20 @@
+# Helm package files
+*.tgz
+
+# Chart-releaser artifacts
+.cr-release-packages/
+.cr-index/
+
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
